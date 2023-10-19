@@ -45,14 +45,16 @@
             <a class="nav-link" href="#">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Register</a>
+            <a class="nav-link" href="{{ url_for('register_page') }}"
+              >Register</a
+            >
           </li>
         </ul>
       </div>
     </nav>
 
     {% block greet_user %} {% endblock greet_user %} {% block list %} {%
-    endblock list %}
+    endblock list %} {% block register_form %}{% endblock register_form %}
 
     <!-- Optional JavaScript; choose one of the two! -->
 
